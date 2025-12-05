@@ -265,13 +265,7 @@ See in file [REFERENCE.md](REFERENCE.md).
 
 ### OS Support:
 
-Net-SNMP module support is available with these operating systems:
-
-* RedHat family  - tested on CentOS 7
-* SuSE family    - tested on SLES 11 SP1
-* Debian family  - tested on Debian 9, Debian 10, Debian 11, Debian 12, Ubuntu 18.04, Ubuntu 20.04
-* FreeBSD family - tested on FreeBSD 12.2 (uses ports/pkgng Net-SNMP, not system bsnmpd)
-* Darwin family  - tested on Darwin 18 (macOS 10.14 "Mojave"), 19 (macOS 10.15 "Catalina"), and 20 (macOS 11.1 "Big Sur").
+Net-SNMP module support is available with the operating systems listed in the [metadata.json](https://github.com/voxpupuli/puppet-snmp/blob/master/metadata.json) file.
 
 ### Notes:
 
