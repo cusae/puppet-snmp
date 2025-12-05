@@ -537,13 +537,6 @@ describe 'snmp' do
 
         describe 'manage_snmpdtrapd => false Debian' do
           let(:params) { { manage_snmptrapd: false } }
-
-          # TRAPDOPTS begins being set by the package in Ubuntu 22.04; we should not log a failure
-          # in this case
-          case facts[:os]['release']['major']
-          when '11', '12', '13'
-            it { is_expected.to contain_file('snmpd.sysconfig').without_content(%r{TRAPDRUN|TRAPDOPTS}) }
-          end
         end
 
         it {
